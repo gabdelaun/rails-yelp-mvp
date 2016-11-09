@@ -11,23 +11,32 @@ restaurants_attributes = [
   {
     name:         "Epicure au Bristol",
     address:      "112 rue du Fg St-Honoré 75008 Paris",
-    phone:        33123456
-    category:     "English",
-    reviews:      "Face au jardin, on découvre une salle lumineuse... et la cuisine d'Éric Frechon.",
+    phone_number: "33123456",
+    category:     "Chinese",
   },
   {
     name:         "La truffière",
     address:      "4 rue Blainville 75005 Paris",
-    phone:        33123465
+    phone_number: "33123465",
     category:     "French",
-    reviews:      "Une valeur sûre que cette belle maison du 17e et les recettes de Jean-Christophe Rizet",
   },
   {
     name:         "Le pré catelan",
     address:      "route de Suresnes 75016 Paris",
-    phone:        33123654
-    category:     "Basque"
-    reviews:  "Oeil vif, geste sûr: impossible de distinguer, dans les créations de Frédéric Anton...",
+    phone_number: "33123654",
+    category:     "French",
+  },
+  {
+    name:         "Osteria Bolognesia",
+    address:      "place st boniface 1150 Bruxelles",
+    phone_number: "32123456",
+    category:     "Italian",
+  },
+  {
+    name:         "Racine",
+    address:      "place flagey 1150 Bruxelles",
+    phone_number: "32123465",
+    category:     "Italian",
   }
 ]
 restaurants_attributes.each { |params| Restaurant.create!(params) }
